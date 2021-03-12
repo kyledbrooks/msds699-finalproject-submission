@@ -2,6 +2,8 @@
 
 ## Research Question: Can we predict whether an individual is going to die of heart failure given at-risk patient data?
 
+Deepnote Link: https://deepnote.com/project/7ae94640-4599-4bbc-bd1a-6db25eca3b31
+
 In this repository, I explore creating a model on a Kaggle data set entitled "Heart Failure Prediction" (https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). I preform preprocessing on the data to convert it into a format suitable for machine learning, and explore three different algorithms (Logistic Regression, Random Forest Classifier, and K-nearest neighbors). 
 
 I utilize RandomSearchCV() and choose my metric to be `fbeta_score` to place more emphasis on recall, given that the scope of the prediction deals with human lives. I found that the ideal algorithm for the data was a `RandomForestClassifier()`. Additionally, I indentified the most significant features as age, ejection_fraction, and serum_creatinine. 
